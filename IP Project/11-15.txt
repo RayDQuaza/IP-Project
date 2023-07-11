@@ -1,0 +1,60 @@
+Q11.(i)SELECT NAME,DA FROM TEACHER,SALARY WHERE TEACHER.SID=SALARY.SID AND DA>300 AND DEPT="Accounts" AND EXPERIENCE>10;
+
+(ii)SELECT NAME,BASIC+ALLOWANCE+DA AS SALARY FROM TEACHER,SALARY WHERE TEACHER.SID=SALARY.SID AND DEPT="Physics" AND BASIC+ALLOWANCE+DA>AVG(BASIC+ALLOWANCE+DA);
+
+(iii)NAME        DA     BASIC
+     RAGHAV    500    23000
+     NAMAN     500    32000
+     JANVI       200    42000
+     SAMUEL     300    21700
+
+(iv)NAME        DEPT             SEX           BASIC      DA
+     NUPUR       COMPUTER      F             12000       1000
+
+Q12.(i)SELECT Book_name,Author_name,Price FROM BOOKS WHERE Publishers="EPB" AND Price<700;
+
+(ii)SELECT SUM(Price),AVG(Qty) FROM BOOKS GROUP BY Type;
+
+(iii)SELECT Book_name,Price FROM BOOKS ORDER BY Price DESC;
+
+(iv)UPDATE BOOKS SET Price=Price+50 WHERE Publishers="First Publ";
+
+(v)INSERT INTO BOOKS VALUES(value1,value2....);
+
+(vi)ALTER BOOKS ADD SNo. Int PRIMARY KEY;
+
+Q13.(A)DISTINCT
+
+(B)SELECT COUNT(EMPLOYEES) FROM STAFF GROUP BY JOB;
+
+Q14.(i)6
+
+(ii)453.35
+
+(iii)1
+
+(iv)0
+
+(v)
+
+(vi)IONAL
+
+Q15.(a)SHOW TABLES;
+
+(b)ALTER TABLE ADD PRIMARY KEY(CustID);
+
+(c)
+
+(d)
+
+(e)The following key is removing primary key from the the table Persons;
+
+(f)degree-10 maximum cardinality-14 minimum cardinality-2
+
+(g)(i)8000
+
+(ii)CONCAT("Quarter",Quarter)          Sales
+                  Quarter1                           15000
+                  Quarter2                           NULL
+                  Quarter3                           5000
+                  Quarter4                           4000
